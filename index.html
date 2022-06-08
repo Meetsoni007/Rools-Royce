@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+  <title>Rolls-Royce</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-success " href="#">Rolls-Royce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-4 my-2" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item active  mx-2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item active mx-2">
+            <a class="nav-link" aria-current="page" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Model
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Phantom</a></li>
+              <li><a class="dropdown-item" href="#">Ghost</a></li>
+             
+              <li><a class="dropdown-item" href="#">Cullinan</a></li>
+              <li>
+                
+              </li>
+              <li><a class="dropdown-item" href="#">The Boat Tail</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="contact.html">Contact Us.</a>
+          </li>
+
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success mx-4" type="submit">Search</button>
+        </form>
+      </div>
+      <div my-4>
+      <button class="btn btn-success btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      <button class="btn btn-success btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+    </div>
+    </div>
+  </nav>
+
+<!-- login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Accepted &Check out</label>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign-up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+         
+          <button type="submit" class="btn btn-success">Creat Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="R-R.jpg " class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to Rolls- <strong class="d-inline-block mb-2 text-success">Royce</strong></h2>
+          <p>A Primium Luxurys No. 1 Cars</p>
+          <!-- <button class="btn btn-success">Phantom</button>
+          <button class="btn btn-success">Ghost</button>
+          <button class="btn btn-success">Cullinan</button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="The boat tail.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to Rolls- <strong class="d-inline-block mb-2 text-success">Royce</strong></h2>
+          <p>A Primium Luxurys No. 1 Cars</p>
+          <!-- <button class="btn btn-success">Phantom</button>
+          <button class="btn btn-success">Ghost</button>
+          <button class="btn btn-success">Cullinan</button> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="royas.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to Rolls- <strong class="d-inline-block mb-2 text-success">Royce</strong></h2>
+          <p>A Primium Luxurys No. 1 Cars</p>
+          <!-- <button class="btn btn-success">Phantom</button>
+          <button class="btn btn-success">Ghost</button>
+          <button class="btn btn-success">Cullinan</button> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Rolls-Royce</strong>
+            <h3 class="mb-0">Ghost</h3>
+             <br>
+           <p class="card-text mb-auto">Engine : 6592 cc  </p>
+            <p class="card-text mb-auto"> weight : 2,490 kg </p>
+            <p class="card-text mb-auto">mileage : 8.4 kmpl</p>
+            <p class="card-text mb-auto">Fuel tank cap.: 83 L</p>
+            <p class="card-text mb-auto">Seating capacity : 5</p>
+            <p class="card-text mb-auto">Top Speed : 254</p>
+            <p class="card-text mb-auto">pick-up : 0-100 km/h	4.8s</p>
+            <p class="card-text mb-auto">price : Rs 6.95 Cr</p>
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Ghost" target="_blank" class="btn btn-success ">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid mx-4 my-4 img-thumbnail" bd-placeholder-img width="200" height="500" src="Ghost.jpg" alt=""><br>
+            <!-- <img class="img-fluid mx-4 my-4 img-thumbnail" bd-placeholder-img width="200" height="500" src="Ghost.jpg" alt=""> -->
+            
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" >
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Rolls-Royce</strong>
+            <h3 class="mb-0"> Boat Tail</h3>
+            <br>
+            <p class="card-text mb-auto">Engine : 6592 cc  </p>
+            <p class="card-text mb-auto"> weight : 2,490 kg </p>
+            <p class="card-text mb-auto">mileage : 8.4 kmpl</p>
+            <p class="card-text mb-auto">Fuel tank cap.: 83 L</p>
+            <p class="card-text mb-auto">Seating capacity : 5</p>
+            <p class="card-text mb-auto">Top Speed : 250</p>
+            <p class="card-text mb-auto">pick-up : 0-100 km/h	2.9s</p>
+            <p class="card-text mb-auto">price : Rs 200 Cr</p>
+            
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Boat_Tail" target="_blank" class="btn btn-success ">Continue reading</a>
+            
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid mx-4 my-4 img-thumbnail" bd-placeholder-img width="200" height="500" src="The boat tail.jpg" alt="">
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Rolls-Royce</strong>
+            <h3 class="mb-0">Phantom</h3>
+            <br>
+            <p class="card-text mb-auto">Engine : 6749  cc  </p>
+            <p class="card-text mb-auto"> weight : 2,610  kg </p>
+            <p class="card-text mb-auto">mileage : 9.8 kmpl</p>
+            <p class="card-text mb-auto">Fuel tank cap.: 100 L</p>
+            <p class="card-text mb-auto">Seating capacity : 5</p>
+            <p class="card-text mb-auto">Top Speed : 250</p>
+            <p class="card-text mb-auto">pick-up : 0-100 km/h	5.3s</p>
+            <p class="card-text mb-auto">Price : Rs 8.99 Cr</p>
+
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Phantom_(eighth_generation)" target="_blank" class="btn btn-success ">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid mx-4 my-4 img-thumbnail" bd-placeholder-img width="200" height="500" src="Phantom-1.jpg" alt="">
+            
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" >
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Rolls-Royce</strong>
+            <h3 class="mb-0">Cullinan</h3>
+            <br>
+            <p class="card-text mb-auto">Engine : 6750 cc </p>
+            <p class="card-text mb-auto"> weight : 2660 kg </p>
+            <p class="card-text mb-auto">mileage : 6.67 kmpl</p>
+            <p class="card-text mb-auto">Fuel tank cap.: 100 L</p>
+            <p class="card-text mb-auto">Seating capacity : 5</p>
+            <p class="card-text mb-auto">Top Speed : 250</p>
+            <p class="card-text mb-auto">pick-up : 0-100 km/h	4.8s</p>
+            <p class="card-text mb-auto">Price : Rs 6.95 Cr</p>
+           
+            <br>
+            
+            <a href="https://en.wikipedia.org/wiki/Rolls-Royce_Cullinan" target="_blank" class="btn btn-success ">Continue reading</a>
+            
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="img-fluid mx-4 my-4 img-thumbnail" bd-placeholder-img width="200" height="500" src="cullinan.webp" alt="">
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    
+    <div class="card-body">
+      <h5 class="card-title">The Most expensive Car The Boat Tail</h5>
+      <p class="card-text"> The luxurys brand &copy; Rolls-Royce 2022-23</p>
+      <!-- <a href="#" class="btn btn-success">Go somewhere</a> -->
+    </div>
+   
+  </div>
+
+<!-- <·> -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

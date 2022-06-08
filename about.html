@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>Rolls-Royce</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-success " href="#">Rolls-Royce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-4 my-2" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item active  mx-2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item active mx-2">
+            <a class="nav-link" aria-current="page" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Model
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Phantom</a></li>
+              <li><a class="dropdown-item" href="#">Ghost</a></li>
+
+              <li><a class="dropdown-item" href="#">Cullinan</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">The Boat Tail</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="contact.html">Contact Us.</a>
+          </li>
+
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success mx-4" type="submit">Search</button>
+        </form>
+      </div>
+      <div my-4>
+        <button class="btn btn-success btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="btn btn-success btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+      </div>
+    </div>
+  </nav>
+  <!-- login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Accepted &Check out</label>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign-up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn btn-success">Creat Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4  ">
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">The Ghost</h2>
+        <p class="text-capitalize">The Rolls-Royce Ghost is a full-sized luxury car manufactured by Rolls-Royce Motor
+          Cars.</p>
+        <p class="text-capitalize">The "Ghost" nameplate, named in honour of the Silver Ghost, a car first produced in
+          1906, was announced in April 2009 at the Auto Shanghai show.</p>
+        <p class="text-capitalize"> The Ghost Extended Wheelbase was introduced in 2011. During development, the Ghost
+          was known as the "RR04"</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="Ghost.jpg"
+          alt="">
+      </div>
+
+    </div>
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="cullinan.webp" alt="width:500px">
+
+
+      </div>
+      <div class="col-md-7">
+        <div class="cullinan">
+          <h2 class="featurette-heading">Cullinan</h2>
+          <p class="text-capitalize">The Rolls-Royce Cullinan is a full-sized luxury sport utility vehicle </p>
+          <p class="text-capitalize">It is named after the Cullinan Diamond, the largest gem-quality rough diamond ever
+            discovered.</p>
+          <p class="text-capitalize">The Cullinan sits above the Ghost and below the Phantom in Rolls-Royce's line-up
+          </p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Phantom</h2>
+        <p class="text-capitalize">The Rolls-Royce Phantom is a full-sized luxury saloon manufactured by Rolls-Royce
+          Motor Cars.</p>
+        <p class="text-capitalize">It is the eighth and current generation of the Rolls-Royce Phantom, debuting in 2017.
+        </p>
+        <p class="text-capitalize">It made its public debut at a special exhibition Rolls-Royce held in London two days
+          later on 29 July.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="Phantom-1.jpg" alt="">
+
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="card text-center">
+
+    <div class="card-body">
+      <h5 class="card-title">The Most expensive Car The Boat Tail</h5>
+      <p class="card-text"> The luxurys brand &copy; Rolls-Royce 2022-23</p>
+      <!-- <a href="#" class="btn btn-success">Go somewhere</a> -->
+    </div>
+
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
